@@ -1,0 +1,213 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1152px;
+  margin: 0 auto;
+}
+
+.main {
+  background: linear-gradient(
+      287.15deg,
+      #450e4b 0%,
+      #3c0c41 24.48%,
+      rgba(207, 0, 99, 0) 100%
+    ),
+    #cf0063;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.desktop-info {
+  background: #1b1b1b;
+  color: white;
+}
+
+.desktop-info__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mobile-info__content {
+  display: flex;
+  align-items: center;
+}
+
+.cards {
+  display: flex;
+}
+
+.cards__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.results {
+  display: flex;
+  justify-content: space-between;
+}
+
+.results__item {
+  text-align: center;
+}
+
+.menu__block {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 170px;
+}
+
+.menu__block-text {
+  width: 370px;
+  text-align: center;
+}
+
+.menu__block_text-child-2 {
+  margin: 25px 0;
+}
+
+.quote {
+  margin-top: 80px;
+  text-align: center;
+}
+
+.quote__text {
+  margin: 30px 0;
+}
+
+.quote__text-dots {
+  width: 100%;
+}
+
+.brands {
+  text-align: center;
+  margin-top: 90px;
+}
+
+.phones {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.phones-img {
+  width: 100%;
+  height: 100%;
+}
+
+.ready {
+  background: linear-gradient(
+      287.15deg,
+      #450e4b 0%,
+      #3c0c41 24.48%,
+      rgba(207, 0, 99, 0) 100%
+    ),
+    #cf0063;
+  background-image: url("./images/Groupvectors.svg");
+  background-position: center;
+  background-size: cover;
+  height: 475px;
+}
+.btn-menu {
+  display: none;
+}
+.burger-menu {
+  display: none;
+}
+
+.burger-menu-active {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  padding: 40px;
+  display: block;
+}
+.burrger-menu__items {
+  display: flex;
+  flex-direction: column;
+}
+.burger-menu__item {
+  text-decoration: none;
+  color: purple;
+  font-size: 35px;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+@media all and (max-width: 1200px) {
+  .desktop-info__content__img {
+    width: 80%;
+  }
+
+  /* .desktop-info {
+        background-color: red;
+    } */
+}
+
+@media all and (max-width: 1100px) {
+  .brands-img {
+    width: 80%;
+  }
+}
+@media all and (max-width: 1050px) {
+  .mobile-info__content__img {
+    width: 250px;
+  }
+}
+
+@media all and (max-width: 1000px) {
+  .cards {
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+  .menu__block {
+    flex-direction: column;
+  }
+  .menu__block-reverse {
+    flex-direction: column-reverse;
+  }
+}
+@media all and (max-width: 520px) {
+  .menu__block-img img {
+    width: 90%;
+  }
+  .menu__block-img {
+    display: flex;
+    justify-content: center;
+  }
+  .mobile-info__content {
+    flex-direction: column;
+  }
+  .mobile-info__content-reverse {
+    flex-direction: column-reverse;
+  }
+  .btn-menu {
+    display: block;
+  }
+  .header__nav {
+    display: none;
+  }
+}
